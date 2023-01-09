@@ -1,0 +1,203 @@
+html, body {
+    height: 100% ;
+}
+* {
+    margin: 0 ;
+}
+li, ul {
+    padding: 0 ;
+    list-style: none ;
+}
+img {
+    object-fit: contain ;
+}
+.logo-container img {
+    height: 100% ;
+}
+.logo-container {
+    display: inline-block ;
+    margin: 10px ;
+    padding-left: 50px ;
+    float: left ;
+    height: 60px ;
+}
+.search-bar {
+    display: inline-block ;
+}
+.search-bar button {
+    float: right ;
+}
+.search-bar input {
+    margin: 5px ;
+}
+.top-grid {
+    display: inline-flex ;
+    flex-direction: row ;
+    height: 150px ;
+    width: 100% ;
+    align-items: center ;
+}
+.top-grid li label {
+	float:right ;
+}
+.top-grid li {
+    display: block ;
+    position: relative ;
+    justify-content: center ;
+    align-items: center ; 
+}
+.top-grid li button {
+    display: inline-block ;
+    position: relative ;
+    height: 35px ;
+    float: right ;
+    background: white ;
+}
+.top-grid li > div {
+    
+}
+.nav-top {
+    position: sticky ;
+    z-index: 20 ;
+    display: inline-block ;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 150px ;
+    background-color: #FF0004 ;
+}
+.nav-side {
+    position: relative ;
+    display: inline-block ;
+    left: 0 ;
+    top: 0 ;
+    width: 100% ;
+    background-color: #FF9999 ;
+}
+.rect-600-100 {
+    width: 600px ;
+    height: 100px ;
+}
+.nav-side a, .nav-side label {
+    display: block ;
+    padding: .85rem ;
+    color: white ;
+    background-color: #FF0004 ;
+    -webkit-transition: all .25s ease-in ;
+    transition: all .25s ease-in ;
+}
+.nav-side label:focus, .nav-side label:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+.automargin {
+    margin: auto ;
+}
+.group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: #333333; }
+.sub-group-list a:focus, .sub-group-list a:hover, .sub-group-list label:focus, .sub-group-list label:hover { background: #333333; }
+.sub-sub-group-list a:focus, .sub-sub-group-list a:hover, .sub-sub-group-list label:focus, .sub-sub-group-list label:hover { background: #333333; }
+.group-list a, .group-list label {
+    text-decoration: none ;
+    padding-left: 1rem;
+    background: #ff2a45 ;
+}
+.group-list label a {
+    width: -webkit-max-content ;
+    border-radius: 10px ;
+}
+.sub-group-list a, .sub-group-list label {
+    padding-left: 2rem;
+    background: #ff0004 ;
+}
+.sub-sub-group-list a, .sub-sub-group-list label {
+    padding-left: 3rem;
+    background: #FF0004 ;
+}
+.group-list, .sub-group-list, .sub-sub-group-list {
+    height: 100%;
+    max-height: 0;
+    min-width: 600px ;
+    overflow: hidden;
+    -webkit-transition: max-height .5s ease-in-out;
+    transition: max-height .5s ease-in-out;
+}
+.nav__list input {
+    height: 0 ;
+}
+.nav__list input[type=checkbox]:checked + label + ul {
+    max-height: 5000000px ;
+}
+.scrolless::-webkit-scrollbar {
+    display: none;
+}
+.scrolless {
+    -ms-overflow-style: none ;
+    scrollbar-width: none;
+    overflow-y: scroll ;
+}
+.shop-master-grid {
+    position: relative ;
+    top: 150px ;
+    left: 600px ;
+    display: grid ;
+    background-color: white ;
+    margin: 10px ;
+    border: 1px solid black ;
+    align-self: center;
+}
+.rect-fill {
+    display: inline-block ;
+    position: relative ;
+    width: 100px ;
+    height: 100px ;
+    background-color: #0dcaf0 ;
+    align-items: center ;
+    justify-content: center ;
+    text-align: center ;
+}
+label {
+    font: 1.5rem SansSerif white ;
+    min-width: 600px ;
+}
+.rect-600-600 {
+    width: 600px ;
+    height: 600px ;
+    background-color: #20c997 ;
+}
+.rect-600-200 {
+    width: 600px ;
+    height: 200px ;
+    background-color: #0dcaf0 ;
+}
+.rect-600-400 {
+    width: 600px ;
+    height: 400px ;
+}
+.rect-600-300 {
+    width: 600px ;
+    height: 300px ;
+}
+.rect-600-150 {
+    width: 600px ;
+    height: 150px ;
+}
+.nav-side img {
+    max-width: 600px ;
+    max-height: 100% ;
+}
+.nav-side li label a img {
+    display: inline-block ;
+    box-shadow: 0 30px 40px rgba(0,0,0,0.2) ;
+    max-height: 60px ;
+    margin-right: 50px ;
+}
+.banner-strip {
+    object-fit: fill ;
+}
+.grid {
+    display: grid ;
+    grid-template-columns: 50% 50%;
+}
+span {
+    width: 100% ;
+    height: 100% ;
+}
