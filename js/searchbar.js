@@ -10,7 +10,7 @@ input.addEventListener("keypress", function(keyevent) {
 }) ;
 
 function gotoTV() {
-    let TVpre = "https://union510inc.shoptruevalue.com/search/alphabet-soup?keyword=" ;
+    let TVpre = "https://union510inc.shoptruevalue.com/search/hw?keyword=" ;
     let TVpost = "&limit=48&sort=relevancy&in_stock_only=1&page=1" ;
     let userSearchVal = document.getElementById("search-text").value.trim() ;
     let searchVal = encodeURI(userSearchVal) ;
