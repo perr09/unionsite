@@ -39,6 +39,8 @@ img {
 }
 .top-grid {
     display: grid ;
+    display: -ms-grid ;
+    -ms-grid-columns: 50% 50% ;
     grid-template-columns: 50% 50% ;
     padding: 5px ;
     height: 100px ;
@@ -46,6 +48,7 @@ img {
 }
 .nav-top {
     display: grid ;
+    display: -ms-grid ;
     position: fixed ;
     z-index: 2000000 ;
     top: 0 ;
@@ -129,6 +132,7 @@ img {
     top: 150px ;
     left: 600px ;
     display: grid ;
+    display: -ms-grid ;
     background-color: white ;
     margin: 10px ;
     border: 1px solid black ;
@@ -175,10 +179,6 @@ label {
 }
 .banner-strip {
     object-fit: fill ;
-}
-.grid {
-    display: grid ;
-    grid-template-columns: 50% 50%;
 }
 span {
     width: 100% ;
