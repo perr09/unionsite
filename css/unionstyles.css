@@ -19,18 +19,23 @@ img {
 .logo-container {
     margin: 10px ;
     justify-self: start ;
-    padding-left: 50px ;
+    padding-left: 30px ;
     max-height: 60px ;
 }
 .search-bar {
     display: inline-block ;
     padding: 20px ;
     justify-self: end ;
+    width: 100% ;
 }
 .search-bar input {
     border-radius: 10px ;
     height: 40px ;
-    width: 350px ;
+    width: 70% ;
+}
+.search-bar button {
+    background: #FFFFFF ;
+    height: 40px ;
 }
 .top-grid {
     display: grid ;
@@ -38,10 +43,6 @@ img {
     padding: 5px ;
     height: 100px ;
     width: 100% ;
-}
-.top-grid li button {
-    height: 35px ;
-    background: white ;
 }
 .nav-top {
     display: grid ;
