@@ -23,12 +23,13 @@ img {
     max-height: 60px ;
 }
 .search-bar {
-    display: inline-block ;
+    display: block ;
     padding-top: 20px ;
     justify-self: end ;
     width: 100% ;
 }
 .search-bar input {
+    display: inline-block ;
     border-radius: 10px ;
     height: 40px ;
     width: 70% ;
@@ -65,7 +66,6 @@ img {
     top: 80px ;
     z-index: 5000 ;
     width: 100% ;
-    background-color: #000000 ;
 }
 .rect-600-100 {
     width: 600px ;
@@ -100,7 +100,7 @@ img {
     border-radius: 10px ;
 }
 .sub-group-list a, .sub-group-list label {
-    padding-left: 2rem;
+    padding-left: 1rem;
     background: #ff0004 ;
 }
 .sub-sub-group-list a, .sub-sub-group-list label {
@@ -114,11 +114,22 @@ img {
     -webkit-transition: max-height .5s ease-in-out ;
     transition: max-height .5s ease-in-out;
 }
+.nav__list {
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+}
+.nav__list li {
+    min-width: 600px ;
+}
 .nav__list input {
     height: 0 ;
 }
 .nav__list input[type=checkbox]:checked + label + ul {
     max-height: 5000000px ;
+}
+.nav-item {
+    width: 50% ;
 }
 .scrolless::-webkit-scrollbar {
     display: none;
@@ -138,8 +149,14 @@ img {
     margin: 10px ;
     align-self: center;
 }
+label a {
+    text-align:center ;
+}
 label {
     font: 1.5rem SansSerif white ;
+}
+span {
+    display: table ;
 }
 .rect-600-600 {
     width: 600px ;
@@ -191,14 +208,29 @@ label {
     border-radius: 20px ;
     min-width: 0 ;
 }
+@media all and (max-width: 1250px) {
+    .nav-item {
+        width: 100% ;
+    }
+}
 @media all and (max-width: 600px) {
-   .search-bar button {
+    .search-bar button {
         position: relative ;
         border: none ;
-        left: -30px ;
+        top: -32px ;
+        left: 70% ;
         text-indent: -9999em ;
         background: url("../assets/icons8-search-more-24.png") no-repeat ;
         width: 24px ;
         height: 24px ;
     } 
+    .search-bar input {
+        width: 90% ;
+    }
+    label {
+        width: 100% ;
+    }
+    label a {
+        font: 1rem SansSerif white ;
+    }
 }
