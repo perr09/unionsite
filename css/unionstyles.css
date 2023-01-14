@@ -14,14 +14,12 @@ img {
 }
 .logo-container img {
     width: 100% ;
-    justify-self: start ;
+    max-height: 60px ;
 }
 .logo-container {
     display: flex ;
     margin: 10px ;
     line-height: 60px ;
-    justify-items: start ;
-    padding-left: 1rem ;
     max-height: 60px ;
 }
 .search-bar {
@@ -34,6 +32,7 @@ img {
     border-radius: 10px ;
     height: 40px ;
     width: 70% ;
+    max-width: 500px ;
 }
 .search-bar button {
     display: inline-block ;
@@ -43,7 +42,6 @@ img {
 }
 .top-grid {
     display: grid ;
-    display: -ms-grid ;
     -ms-grid-columns: 50% 50% ;
     grid-template-columns: 50% 50% ;
     padding: 5px ;
@@ -65,7 +63,6 @@ img {
     position: relative ;
     left: 0 ;
     top: 80px ;
-    bottom: 10px ;
     z-index: 5000 ;
     width: 100% ;
     background-color: #000000 ;
@@ -75,9 +72,9 @@ img {
     height: 100px ;
 }
 .nav-side a, .nav-side label {
-    display: block ;
+    display: flex ;
     padding: .85rem ;
-    padding-left: 100px ;
+    padding-left: 25% ;
     color: white ;
     background-color: #FF0004 ;
     -webkit-transition: all .25s ease-in ;
@@ -111,10 +108,10 @@ img {
     background: #FF0004 ;
 }
 .group-list, .sub-group-list, .sub-sub-group-list {
-    height: 100%;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height .5s ease-in-out;
+    height: 100% ;
+    max-height: 0 ;
+    overflow: hidden ;
+    -webkit-transition: max-height .5s ease-in-out ;
     transition: max-height .5s ease-in-out;
 }
 .nav__list input {
@@ -193,4 +190,15 @@ label {
     max-height: 300px ;
     border-radius: 20px ;
     min-width: 0 ;
+}
+@media all and (max-width: 600px) {
+   .search-bar button {
+        position: relative ;
+        border: none ;
+        left: -30px ;
+        text-indent: -9999em ;
+        background: url("../assets/icons8-search-more-24.png") no-repeat ;
+        width: 24px ;
+        height: 24px ;
+    } 
 }
