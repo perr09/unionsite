@@ -114,18 +114,15 @@ img {
     -webkit-transition: max-height .5s ease-in-out ;
     transition: max-height .5s ease-in-out;
 }
-.nav__list {
+.nav-list {
     display: flex ;
     flex-direction: row ;
     flex-wrap: wrap ;
 }
-.nav__list li {
-    min-width: 600px ;
-}
-.nav__list input {
+.nav-list input {
     height: 0 ;
 }
-.nav__list input[type=checkbox]:checked + label + ul {
+.nav-list input[type=checkbox]:checked + label + ul {
     max-height: 5000000px ;
 }
 .nav-item {
@@ -182,13 +179,13 @@ span {
 }
 .nav-side img {
     max-width: 600px ;
-    max-height: 100% ;
 }
 .nav-side li label a img {
     display: inline-block ;
     box-shadow: 0 30px 40px rgba(0,0,0,0.2) ;
     max-height: 60px ;
     margin-right: 50px ;
+    overflow: hidden ;
 }
 .main-page {
     position: fixed ;
