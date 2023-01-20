@@ -99,17 +99,26 @@ img {
     width: -webkit-max-content ;
     border-radius: 10px ;
 }
+.group-list {
+    background-color: #ff0004 ;
+}
 .sub-group-list a, .sub-group-list label {
+    margin-left: 1rem ;
+    margin-right: 1rem ;
     padding-left: 1rem;
-    background: #ff0004 ;
+    background: white ;
+    color: black ;
+}
+.sub-group-list label {
+    border: 1px solid white ;
 }
 .sub-sub-group-list a, .sub-sub-group-list label {
-    padding-left: 3rem;
+    border-left: 10px solid white ;
+    border-right: 10px solid white ;
     background: #FF0004 ;
 }
 .group-list, .sub-group-list, .sub-sub-group-list {
     height: 100% ;
-    max-height: 0 ;
     overflow: hidden ;
     -webkit-transition: max-height .5s ease-in-out ;
     transition: max-height .5s ease-in-out;
@@ -128,6 +137,9 @@ img {
 .nav-item {
     width: 50% ;
 }
+.closeable {
+    max-height: 0 ;
+}
 .scrolless::-webkit-scrollbar {
     display: none;
 }
@@ -145,9 +157,6 @@ img {
     background-color: white ;
     margin: 10px ;
     align-self: center;
-}
-label a {
-    text-align:center ;
 }
 label {
     font: 1.5rem SansSerif white ;
@@ -178,9 +187,6 @@ span {
     height: 150px ;
 }
 .nav-side img {
-    max-width: 600px ;
-}
-.nav-side li label a img {
     display: inline-block ;
     box-shadow: 0 30px 40px rgba(0,0,0,0.2) ;
     max-height: 60px ;
@@ -213,21 +219,21 @@ span {
 @media all and (max-width: 600px) {
     .search-bar button {
         position: relative ;
-        border: none ;
         top: -32px ;
-        left: 70% ;
-        text-indent: -9999em ;
-        background: url("../assets/icons8-search-more-24.png") no-repeat ;
-        width: 24px ;
-        height: 24px ;
+        right: -85% ;
+        cursor: pointer ;
+        border: none ;
+        text-indent: -9999px ;
+        background: url("http://www.union5and10.com/s/cc_images/cache_905744329.png") no-repeat ;
+        background-color: transparent ;
+        width: 50px ;
+        height: 50px ;
     } 
     .search-bar input {
-        width: 90% ;
-    }
-    label {
         width: 100% ;
     }
     label a {
+        max-width: 300px ;
         font: 1rem SansSerif white ;
     }
 }
