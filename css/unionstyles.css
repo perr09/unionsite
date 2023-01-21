@@ -96,15 +96,14 @@ img {
     background: #FF0004 ;
 }
 .group-list label a {
-    width: -webkit-max-content ;
     border-radius: 10px ;
 }
 .group-list {
+    width: 100% ;
     background-color: #ff0004 ;
 }
 .sub-group-list a, .sub-group-list label {
     margin-left: 1rem ;
-    margin-right: 1rem ;
     padding-left: 1rem;
     background: white ;
     color: black ;
@@ -113,12 +112,11 @@ img {
     border: 1px solid white ;
 }
 .sub-sub-group-list a, .sub-sub-group-list label {
-    border-left: 10px solid white ;
-    border-right: 10px solid white ;
+    border-left: 4rem solid white ;
+    border-right: 1px solid white ;
     background: #FF0004 ;
 }
 .group-list, .sub-group-list, .sub-sub-group-list {
-    height: 100% ;
     overflow: hidden ;
     -webkit-transition: max-height .5s ease-in-out ;
     transition: max-height .5s ease-in-out;
@@ -228,12 +226,18 @@ span {
         background-color: transparent ;
         width: 50px ;
         height: 50px ;
-    } 
+    }
+    .nav-side a, .nav-side label {
+        padding: 0.5rem ;
+    }
     .search-bar input {
         width: 100% ;
     }
     label a {
         max-width: 300px ;
         font: 1rem SansSerif white ;
+    }
+    .nav-side img {
+        max-height: 30px ;
     }
 }
